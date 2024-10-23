@@ -1,4 +1,4 @@
-#### Rule Engine with AST
+####        Rule Engine with AST
 
 A simple 3-tier rule engine application with UI, API, and Backend that determines user eligibility based on attributes like age, department, salary, experience, etc. This system uses an Abstract Syntax Tree (AST) to dynamically create, combine, and modify conditional rules and evaluate them against user data.
 
