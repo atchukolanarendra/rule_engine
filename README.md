@@ -11,6 +11,7 @@ A simple 3-tier rule engine application with UI, API, and Backend that determine
 -API Endpoints
 -Schema Design
 -Testing
+-Screenshots
 -Dependencies
 -Design Decisions
 
@@ -25,11 +26,13 @@ The project follows a 3-tier architecture:
    3.Data Layer: SQLite Database to store rules.
 
 # Features
+
     1.Dynamic Rule Creation: Users can create rules dynamically via the UI or API.
     2.Rule Combination: Multiple rules can be combined using logical operators (AND, OR).
     3.Rule Evaluation: Evaluate if user data satisfies the defined rules.
     4.Error Handling: Handles invalid inputs and formats gracefully.
     5.AST Representation: Convert rule strings to an AST for better manipulation.
+
 
 # Project Setup
 
@@ -39,22 +42,29 @@ git clone https://github.com/atchukolanarendra/rule_engine.git
 cd rule-engine-with-ast
 
 ##### Install Dependencies: 
+
 Create a virtual environment (optional but recommended):
 python3 -m venv venv
 source venv/bin/activate  
 
 #### Install required packages:
+
 pip install -r requirements.txt
 
 #### Database Initialization: Initialize the SQLite database:
+
 python app.py
 
 # How to Run
+
 #### Run the Flask App:
-   python app.py
+
+python app.py
+
 This will start the server on http://127.0.0.1:5000/.
 
 #### Access the Application: 
+
 Open a browser and visit http://127.0.0.1:5000/ to interact with the UI for rule creation and evaluation.
 
 
@@ -78,6 +88,7 @@ json
 {
   "rules": ["age > 30 AND department = 'Sales'", "experience > 5"]
 }
+
 3. Evaluate Rule:
 
 Endpoint: /evaluate_rule
@@ -127,6 +138,7 @@ json
 
 # Dependencies
 Ensure the following dependencies are listed in requirements.txt:
+
 1.Flask==2.0.1
 2.Flask-SQLAlchemy==2.5.1
 3.SQLAlchemy==1.4.15
