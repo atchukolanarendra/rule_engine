@@ -1,4 +1,4 @@
-####        Rule Engine with AST
+#  Rule Engine with AST
 
 A simple 3-tier rule engine application with UI, API, and Backend that determines user eligibility based on attributes like age, department, salary, experience, etc. This system uses an Abstract Syntax Tree (AST) to dynamically create, combine, and modify conditional rules and evaluate them against user data.
 
@@ -26,7 +26,7 @@ The project follows a 3-tier architecture:
    2.API Layer: Flask-based API to create, combine, and evaluate rules.
    3.Data Layer: SQLite Database to store rules.
 
-## Features
+# Features
     1.Dynamic Rule Creation: Users can create rules dynamically via the UI or API.
     2.Rule Combination: Multiple rules can be combined using logical operators (AND, OR).
     3.Rule Evaluation: Evaluate if user data satisfies the defined rules.
@@ -73,7 +73,13 @@ json
   2.rule_string: String (The string representation of the rule)
   
 
--| **id** | **rule_string**                              |
--|--------|----------------------------------------------|
--| 1      | age > 30 AND department = 'Sales'            |
--| 2      | salary > 50000 AND experience > 5            |
+| **id** | **rule_string**                              |
+|--------|----------------------------------------------|
+| 1      | age > 30 AND department = 'Sales'            |
+| 2      | salary > 50000 AND experience > 5            |
+
+# Testing
+### Test case 1:
+    Rule Creation: Ensure that a rule string is correctly converted into an AST.
+    Input String: (age>30 AND department = 'Sales')
+     <img src="d:\rule_engine\README_image\image1.jpeg">
