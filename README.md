@@ -110,11 +110,11 @@ json
     Rule Creation: Ensure that a rule string is correctly converted into an AST.
 ###   Input String: (age>30 AND department = 'Sales')
 
-    ![image1](https://github.com/user-attachments/assets/9f266421-6c2e-44e9-a9f5-420d7dfcecc3)
+![image1](https://github.com/user-attachments/assets/9f266421-6c2e-44e9-a9f5-420d7dfcecc3)
 
 ### Output for the testcase 1:
 
-    ![image2](https://github.com/user-attachments/assets/81c9ed25-5bfc-42c5-88db-bbf8194bf0e9)
+![image2](https://github.com/user-attachments/assets/81c9ed25-5bfc-42c5-88db-bbf8194bf0e9)
         The Output shows that, the rule is created, And represenations of string is presented at AST 
 
 ### Test case2:
