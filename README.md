@@ -43,7 +43,7 @@ cd rule-engine-with-ast
 
 ##### Install Dependencies: 
 
-Create a virtual environment (optional but recommended):
+Create a virtual environment:
 python3 -m venv venv
 source venv/bin/activate  
 
@@ -80,7 +80,6 @@ json
 }
 
 2. Combine Rules:
-
 Endpoint: /combine_rules
 Method: POST
 Payload:
@@ -90,7 +89,6 @@ json
 }
 
 3. Evaluate Rule:
-
 Endpoint: /evaluate_rule
 Method: POST
 Payload:
@@ -140,7 +138,9 @@ json
 Ensure the following dependencies are listed in requirements.txt:
 
 1.Flask==2.0.1
+
 2.Flask-SQLAlchemy==2.5.1
+
 3.SQLAlchemy==1.4.15
 
 # Design Decisions
