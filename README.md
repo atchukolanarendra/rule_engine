@@ -82,4 +82,5 @@ json
 ### Test case 1:
     Rule Creation: Ensure that a rule string is correctly converted into an AST.
     Input String: (age>30 AND department = 'Sales')
-<img src="![alt text](image1-2.jpeg)">
+![image1](https://github.com/user-attachments/assets/9f266421-6c2e-44e9-a9f5-420d7dfcecc3)
+
