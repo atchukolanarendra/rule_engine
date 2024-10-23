@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rule Management</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Rule Management System</h1>
+        
+        <div class="section">
+            <h2>Create a Rule</h2>
+            <input type="text" id="rule_string" placeholder="Enter rule (e.g. age > 30)">
+            <button id="create_rule_btn">Create Rule</button>
+        </div>
+        
+        <div class="section">
+            <h2>Combine Rules</h2>
+            <input type="text" id="combine_rule1" placeholder="First rule ID">
+            <input type="text" id="combine_rule2" placeholder="Second rule ID">
+            <button id="combine_rule_btn">Combine Rules</button>
+        </div>
+        
+        <div class="section">
+            <h2>Evaluate a Rule</h2>
+            <input type="text" id="evaluate_rule_id" placeholder="Rule ID">
+            <textarea id="user_data" placeholder='Enter user data in JSON format (e.g. {"age": 35, "department": "Sales"})'></textarea>
+            <button id="evaluate_rule_btn">Evaluate Rule</button>
+        </div>
+        
+        <div id="output" class="output"></div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
