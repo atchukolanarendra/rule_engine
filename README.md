@@ -33,6 +33,33 @@ The project follows a 3-tier architecture:
     4.Error Handling: Handles invalid inputs and formats gracefully.
     5.AST Representation: Convert rule strings to an AST for better manipulation.
 
+# Project Setup
+
+#### Clone the Repository:
+
+git clone https://github.com/atchukolanarendra/rule_engine.git
+cd rule-engine-with-ast
+
+##### Install Dependencies: 
+Create a virtual environment (optional but recommended):
+python3 -m venv venv
+source venv/bin/activate  
+
+#### Install required packages:
+pip install -r requirements.txt
+
+#### Database Initialization: Initialize the SQLite database:
+python app.py
+
+# How to Run
+#### Run the Flask App:
+   python app.py
+This will start the server on http://127.0.0.1:5000/.
+
+#### Access the Application: 
+Open a browser and visit http://127.0.0.1:5000/ to interact with the UI for rule creation and evaluation.
+
+
 #  API Endpoints
 1. Create Rule:
 
@@ -81,6 +108,16 @@ json
 # Testing
 ### Test case 1:
     Rule Creation: Ensure that a rule string is correctly converted into an AST.
-    Input String: (age>30 AND department = 'Sales')
-![image1](https://github.com/user-attachments/assets/9f266421-6c2e-44e9-a9f5-420d7dfcecc3)
+###   Input String: (age>30 AND department = 'Sales')
 
+    ![image1](https://github.com/user-attachments/assets/9f266421-6c2e-44e9-a9f5-420d7dfcecc3)
+
+### Output for the testcase 1:
+
+    ![image2](https://github.com/user-attachments/assets/81c9ed25-5bfc-42c5-88db-bbf8194bf0e9)
+        The Output shows that, the rule is created, And represenations of string is presented at AST 
+
+### Test case2:
+     Rule Combination: Test combining two or more rules and ensure the AST is valid
+####   Input String: (age >30 AND department = 'Sales') OR (salary > 20000 OR experience > 5) 
+    
